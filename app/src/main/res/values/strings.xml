@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Workshop</string>
+
+
+    <string-array name="levels">
+        <item>المستوى1</item>
+        <item>المستوى2</item>
+        <item>المستوى3</item>
+    </string-array>
+    <string-array name="grad">
+        <item>درجه1</item>
+        <item>درجه2</item>
+        <item>درجه3</item>
+    </string-array>
+
+    <string-array name="department_values">
+        <item>القسم</item>
+        <item>عمارة</item>
+        <item>هندسة</item>
+        <item>حسابات</item>
+    </string-array>
+
+    <string-array name="level_values">
+        <item>المستوى</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="brand_values">
+        <item>البراند</item>
+        <item>zara</item>
+        <item>dandy</item>
+        <item>adidas</item>
+        <item>nike</item>
+    </string-array>
+
+    <string-array name="Governorate">
+        <item>المحافظة</item>
+        <item>القاهرة</item>
+        <item>القليوبية</item>
+        <item>الجيزة</item>
+        <item>الدقهلية</item>
+        <item>الغربية</item>
+        <item>المنوفية</item>
+    </string-array>
+</resources>
