@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.T4tip;
 
 
 import android.os.Bundle;
@@ -17,7 +17,8 @@ import android.widget.ImageView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class groundFrag1 extends Fragment {
+public class wallFrag3 extends Fragment {
+
 
     View myview;
     ConstraintLayout exp1,exp2,exp3,exp4,exp5;
@@ -25,19 +26,34 @@ public class groundFrag1 extends Fragment {
     CardView card1,card2,card3,card4,card5;
 
     String roomKind;
-    public groundFrag1(String roomKind) {
+    public wallFrag3(String roomKind) {
         this.roomKind=roomKind;
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        myview = inflater.inflate(R.layout.fragment_ground_frag1, container, false);
-
+        myview= inflater.inflate(R.layout.fragment_wall_frag3, container, false);
+        //VisibilityAction(roomKind);
         cardAnimation();
 
         return myview;
     }
+
+//    private void VisibilityAction(String roomKind) {
+//        if(roomKind.equals("غرفه")||roomKind.equals("ريسيبشن"))
+//        {
+//            card4.setEnabled(false);
+//            card5.setEnabled(false);
+//
+//        }else
+//        {
+//            card4.setEnabled(true);
+//            card5.setEnabled(true);
+//
+//        }
+//    }
 
     private void cardAnimation() {
         exp1 = myview.findViewById(R.id.exp1);

@@ -1,6 +1,5 @@
-package com.example.myapplication;
+package com.example.T4tip;
 
-import androidx.core.app.NotificationCompatSideChannelService;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;

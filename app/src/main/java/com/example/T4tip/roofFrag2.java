@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.T4tip;
 
 
 import android.os.Bundle;

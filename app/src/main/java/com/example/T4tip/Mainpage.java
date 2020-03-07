@@ -1,14 +1,12 @@
-package com.example.myapplication;
+package com.example.T4tip;
 
 import android.os.Bundle;
 import android.widget.EditText;
-import android.widget.TableLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 public class Mainpage extends AppCompatActivity implements TabLayout.BaseOnTabSelectedListener{

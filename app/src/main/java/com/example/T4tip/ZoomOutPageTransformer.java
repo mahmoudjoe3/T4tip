@@ -1,8 +1,7 @@
-package com.example.myapplication;
+package com.example.T4tip;
 
 import android.view.View;
 
-import androidx.annotation.NonNull;
 import androidx.viewpager.widget.ViewPager;
 
 public class ZoomOutPageTransformer implements ViewPager.PageTransformer {

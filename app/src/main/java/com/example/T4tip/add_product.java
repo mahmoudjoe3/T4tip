@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.T4tip;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.QuickContactBadge;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
