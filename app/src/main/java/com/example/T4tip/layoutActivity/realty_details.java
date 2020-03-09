@@ -1,4 +1,4 @@
-package com.example.T4tip;
+package com.example.T4tip.layoutActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.T4tip.R;
+import com.example.T4tip.ExternalClass.house;
 
 public class realty_details extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.T4tip;
+package com.example.T4tip.layoutActivity;
 
 import android.os.Bundle;
 import android.widget.EditText;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.T4tip.R;
+import com.example.T4tip.ExternalClass.ZoomOutPageTransformer;
+import com.example.T4tip.ExternalClass.pageAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class Mainpage extends AppCompatActivity implements TabLayout.BaseOnTabSelectedListener{
@@ -16,7 +19,7 @@ public class Mainpage extends AppCompatActivity implements TabLayout.BaseOnTabSe
 
     TabLayout tabLayout;
     ViewPager viewPager;
-    pageAdapter pageAdapter;
+    com.example.T4tip.ExternalClass.pageAdapter pageAdapter;
     String roomKind;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

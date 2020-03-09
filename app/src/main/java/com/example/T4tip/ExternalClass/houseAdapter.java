@@ -1,4 +1,4 @@
-package com.example.T4tip;
+package com.example.T4tip.ExternalClass;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.example.T4tip.R;
+import com.example.T4tip.layoutActivity.Mainpage;
 
 import java.util.ArrayList;
 

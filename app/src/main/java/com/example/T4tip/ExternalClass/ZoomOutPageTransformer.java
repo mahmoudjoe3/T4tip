@@ -1,4 +1,4 @@
-package com.example.T4tip;
+package com.example.T4tip.ExternalClass;
 
 import android.view.View;
 

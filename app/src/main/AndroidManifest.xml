@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".roomPageActivity" android:screenOrientation="locked">  </activity>
+        <activity android:name=".layoutActivity.roomPageActivity" android:screenOrientation="locked">  </activity>
         <activity android:name=".add_brand" android:screenOrientation="locked" />
         <activity android:name=".add_product" android:screenOrientation="locked"/>
-        <activity android:name=".realty_details" android:screenOrientation="locked"/>
-        <activity android:name=".Register" android:screenOrientation="locked"/>
-        <activity android:name=".Mainpage" android:screenOrientation="locked"/>
-        <activity android:name=".Login" android:screenOrientation="locked">
+        <activity android:name=".layoutActivity.realty_details" android:screenOrientation="locked"/>
+        <activity android:name=".layoutActivity.Register" android:screenOrientation="locked"/>
+        <activity android:name=".layoutActivity.Mainpage" android:screenOrientation="locked"/>
+        <activity android:name=".layoutActivity.Login" android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

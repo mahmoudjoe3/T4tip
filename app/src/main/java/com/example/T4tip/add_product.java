@@ -10,6 +10,8 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.T4tip.layoutActivity.Mainpage;
+
 public class add_product extends AppCompatActivity {
 
     private Spinner deprt_spin , level_spin, brand_spin;

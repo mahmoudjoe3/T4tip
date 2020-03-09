@@ -1,8 +1,15 @@
-package com.example.T4tip;
+package com.example.T4tip.ExternalClass;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+
+import com.example.T4tip.layoutFragment.electricityFrag4;
+import com.example.T4tip.layoutFragment.groundFrag1;
+import com.example.T4tip.layoutFragment.plumbingFrag5;
+import com.example.T4tip.layoutFragment.roofFrag2;
+import com.example.T4tip.layoutFragment.wallFrag3;
+import com.example.T4tip.layoutFragment.woodFrag6;
 
 public class pageAdapter extends FragmentPagerAdapter {
     private int numOfTabs;

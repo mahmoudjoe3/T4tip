@@ -1,4 +1,4 @@
-package com.example.T4tip;
+package com.example.T4tip.layoutActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.T4tip.R;
 
 public class Register extends AppCompatActivity {
 private Button next;
@@ -20,7 +22,7 @@ private Button next;
         to_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent to_loin_intent = new Intent(Register.this,Login.class);
+                Intent to_loin_intent = new Intent(Register.this, Login.class);
                 startActivity(to_loin_intent);
             }
         });
