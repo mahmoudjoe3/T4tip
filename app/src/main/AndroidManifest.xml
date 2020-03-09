@@ -15,6 +15,7 @@
         <activity android:name=".layoutActivity.realty_details" android:screenOrientation="locked"/>
         <activity android:name=".layoutActivity.Register" android:screenOrientation="locked"/>
         <activity android:name=".layoutActivity.Mainpage" android:screenOrientation="locked"/>
+        <activity android:name=".layoutActivity.add_realty" android:screenOrientation="locked"/>
         <activity android:name=".layoutActivity.Login" android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
