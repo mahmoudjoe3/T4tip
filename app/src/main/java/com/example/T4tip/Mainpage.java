@@ -28,7 +28,7 @@ public class Mainpage extends AppCompatActivity implements TabLayout.BaseOnTabSe
 
         viewBasedOn_roomKind(roomKind.split(" ")[0]);
 
-        pageAdapter=new pageAdapter(getSupportFragmentManager(),tabLayout.getTabCount(),roomKind);
+        pageAdapter=new pageAdapter(getSupportFragmentManager(),tabLayout.getTabCount(),roomKind); //send it to pageadapter like مطبخ 1
         viewPager.setPageTransformer(true,new ZoomOutPageTransformer());
         viewPager.setAdapter(pageAdapter);
 

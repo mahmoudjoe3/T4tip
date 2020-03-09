@@ -17,7 +17,7 @@ public class pageAdapter extends FragmentPagerAdapter {
 
             if(numOfTabs==6) {
                 switch (i) {
-                    case 0:
+                    case 0:                                       ////send it to pageadapter like مطبخ 1
                         return new plumbingFrag5(roomKind);
                     case 1:
                         return new woodFrag6(roomKind);

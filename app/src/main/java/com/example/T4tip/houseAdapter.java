@@ -45,7 +45,7 @@ public class houseAdapter extends RecyclerView.Adapter<houseAdapter.MyHolder>  {
             @Override
             public void onClick(View v) {
                 Intent in = new Intent(context, Mainpage.class);
-                in.putExtra("roomKind",items.get(position));
+                in.putExtra("roomKind",items.get(position)); //send it to mainpage like مطبخ 1
                 context.startActivity(in);
             }
         });

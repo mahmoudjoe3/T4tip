@@ -35,30 +35,31 @@ public class wallFrag3 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         myview= inflater.inflate(R.layout.fragment_wall_frag3, container, false);
-        //VisibilityAction(roomKind);
         cardAnimation();
+        VisibilityAction(roomKind.split(" ")[0]);
+
 
         return myview;
     }
 
-//    private void VisibilityAction(String roomKind) {
-//        if(roomKind.equals("غرفه")||roomKind.equals("ريسيبشن"))
-//        {
-//            card4.setEnabled(false);
-//            card5.setEnabled(false);
-//
-//        }else
-//        {
-//            card4.setEnabled(true);
-//            card5.setEnabled(true);
-//
-//        }
-//    }
+    private void VisibilityAction(String roomKind) {
+        if((roomKind.equals("حمام")||roomKind.equals("مطبخ"))&&card4.getVisibility()==View.GONE)
+        {
+            card4.setVisibility(View.VISIBLE);
+            card5.setVisibility(View.VISIBLE);
+
+        }
+        else if((roomKind.equals("غرفه")||roomKind.equals("ريسيبشن"))&&exp4.getVisibility()==View.VISIBLE){
+            card4.setVisibility(View.GONE);
+            card5.setVisibility(View.GONE);
+
+        }
+    }
 
     private void cardAnimation() {
         exp1 = myview.findViewById(R.id.exp1);
         arrow1 = myview.findViewById(R.id.arrow1);
-        card1 = myview.findViewById(R.id.card1);
+        card1 = myview.findViewById(R.id.window_card);
 
         card1.setOnClickListener(new View.OnClickListener() {
             @Override

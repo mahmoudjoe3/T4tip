@@ -36,11 +36,12 @@
 
             <TextView
                 android:id="@+id/roomTitle"
-                android:layout_width="214dp"
-                android:layout_height="45dp"
+                android:layout_width="199dp"
+                android:layout_height="41dp"
                 android:layout_gravity="end"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="4dp"
+                android:fontFamily="@font/understory"
                 android:gravity="center_horizontal"
                 android:text="الغرفه"
                 android:textSize="30dp"

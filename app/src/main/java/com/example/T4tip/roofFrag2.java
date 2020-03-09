@@ -43,7 +43,7 @@ public class roofFrag2 extends Fragment {
     private void cardAnimation() {
         exp1 = myview.findViewById(R.id.exp1);
         arrow1 = myview.findViewById(R.id.arrow1);
-        card1 = myview.findViewById(R.id.card1);
+        card1 = myview.findViewById(R.id.window_card);
 
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
