@@ -53,6 +53,7 @@ private EditText country,area,houseKind,num_of_room,num_of_toilet,num_of_cetchen
         country=findViewById(R.id.txt_country);
         area=findViewById(R.id.txt_area);
         houseKind=findViewById(R.id.txt_houseKind);
+        houseKind.setText(getIntent().getStringExtra("room kind"));
         num_of_room=findViewById(R.id.txt_num_of_room);
         num_of_toilet=findViewById(R.id.txt_num_of_toilet);
         num_of_cetchen=findViewById(R.id.txt_num_of_cetchin);

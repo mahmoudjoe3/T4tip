@@ -41,7 +41,9 @@ public class add_realty extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String roomkind = realty_adapter.getItem(i);
                 Intent realty_intent =  new Intent(add_realty.this,realty_details.class);
+                realty_intent.putExtra("room kind",roomkind);
                 startActivity(realty_intent);
             }
         });
@@ -50,6 +52,7 @@ public class add_realty extends AppCompatActivity {
 
     private void Alert_Dialog() {
         final AlertDialog.Builder myDialog = new AlertDialog.Builder(add_realty.this);
+
         myDialog.setTitle("أدخل اسم العقار");
         final EditText realty_name = new EditText(add_realty.this);
         realty_name.setInputType(InputType.TYPE_CLASS_TEXT);
