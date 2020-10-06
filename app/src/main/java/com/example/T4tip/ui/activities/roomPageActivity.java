@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutActivity;
+package com.example.T4tip.ui.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.T4tip.R;
-import com.example.T4tip.ExternalClass.house;
-import com.example.T4tip.ExternalClass.houseAdapter;
+import com.example.T4tip.pojo.house;
+import com.example.T4tip.externalClass.houseAdapter;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ public class roomPageActivity extends AppCompatActivity {
     String country,area,house;
 
     ArrayList<String> items;
-    com.example.T4tip.ExternalClass.house mHouse;
+    com.example.T4tip.pojo.house mHouse;
     houseAdapter adapter;
     TextView txt_house;
     RecyclerView container;

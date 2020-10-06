@@ -10,7 +10,7 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.T4tip.layoutActivity.Mainpage;
+import com.example.T4tip.ui.activities.Mainpage;
 
 public class add_product extends AppCompatActivity {
 

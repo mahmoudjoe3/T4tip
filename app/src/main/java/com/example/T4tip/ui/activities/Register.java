@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutActivity;
+package com.example.T4tip.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,7 +29,7 @@ private Button next;
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Login_intent = new Intent(Register.this, realty_details.class);
+                Intent Login_intent = new Intent(Register.this, FlatDetails.class);
                 startActivity(Login_intent);
             }
         });

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layoutFragment.wallFrag3">
+    tools:context=".ui.fragments.Frag3Wall">
 
     <!-- TODO: Update blank fragment layout -->
 

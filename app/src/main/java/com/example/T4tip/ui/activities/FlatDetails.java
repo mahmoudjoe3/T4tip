@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutActivity;
+package com.example.T4tip.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.T4tip.R;
-import com.example.T4tip.ExternalClass.house;
+import com.example.T4tip.pojo.house;
 
-public class realty_details extends AppCompatActivity {
+public class FlatDetails extends AppCompatActivity {
 
 private Button submit_house;
 private EditText country,area,houseKind,num_of_room,num_of_toilet,num_of_cetchen,num_of_reception;
@@ -37,12 +37,12 @@ private EditText country,area,houseKind,num_of_room,num_of_toilet,num_of_cetchen
                             Integer.parseInt(num_of_reception.getText().toString())
                     );
 
-                    Intent in = new Intent(realty_details.this, roomPageActivity.class);
+                    Intent in = new Intent(FlatDetails.this, roomPageActivity.class);
                     in.putExtra("the house",mHouse);
                     startActivity(in);
                 }
                 else
-                    Toast.makeText(realty_details.this, "missing data to fill", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FlatDetails.this, "missing data to fill", Toast.LENGTH_SHORT).show();
             }
         });
 

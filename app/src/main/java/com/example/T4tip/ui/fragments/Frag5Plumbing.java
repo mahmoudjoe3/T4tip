@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutFragment;
+package com.example.T4tip.ui.fragments;
 
 
 import android.os.Bundle;
@@ -12,13 +12,13 @@ import android.view.ViewGroup;
 import com.example.T4tip.R;
 
 
-public class plumbingFrag5 extends Fragment {
+public class Frag5Plumbing extends Fragment {
     String roomKind;
     View myview;
     CardView toiletCard,cetchen_card;
 
 
-    public plumbingFrag5(String roomKind) {
+    public Frag5Plumbing(String roomKind) {
         this.roomKind=roomKind;
     }
     @Override

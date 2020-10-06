@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutFragment;
+package com.example.T4tip.ui.fragments;
 
 
 import android.os.Bundle;
@@ -19,7 +19,7 @@ import com.example.T4tip.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class wallFrag3 extends Fragment {
+public class Frag3Wall extends Fragment {
 
 
     View myview;
@@ -28,7 +28,7 @@ public class wallFrag3 extends Fragment {
     CardView card1,card2,card3,card4,card5;
 
     String roomKind;
-    public wallFrag3(String roomKind) {
+    public Frag3Wall(String roomKind) {
         this.roomKind=roomKind;
     }
 

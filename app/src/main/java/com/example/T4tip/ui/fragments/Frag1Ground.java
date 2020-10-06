@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutFragment;
+package com.example.T4tip.ui.fragments;
 
 
 import android.os.Bundle;
@@ -19,29 +19,28 @@ import com.example.T4tip.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class roofFrag2 extends Fragment {
-
+public class Frag1Ground extends Fragment {
 
     View myview;
-    ConstraintLayout exp1,exp2,exp3;
-    ImageView arrow1,arrow2,arrow3;
-    CardView card1,card2,card3;
+    ConstraintLayout exp1,exp2,exp3,exp4,exp5;
+    ImageView arrow1,arrow2,arrow3,arrow4,arrow5;
+    CardView card1,card2,card3,card4,card5;
 
     String roomKind;
-    public roofFrag2(String roomKind) {
+    public Frag1Ground(String roomKind) {
         this.roomKind=roomKind;
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        myview= inflater.inflate(R.layout.fragment_roof_frag2, container, false);
+        myview = inflater.inflate(R.layout.fragment_ground_frag1, container, false);
 
         cardAnimation();
 
         return myview;
     }
+
     private void cardAnimation() {
         exp1 = myview.findViewById(R.id.exp1);
         arrow1 = myview.findViewById(R.id.arrow1);
@@ -101,6 +100,47 @@ public class roofFrag2 extends Fragment {
                 }
             }
         });
+
+
+        exp4 = myview.findViewById(R.id.exp4);
+        arrow4 = myview.findViewById(R.id.arrow4);
+        card4 = myview.findViewById(R.id.card4);
+
+        card4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (exp4.getVisibility()==View.GONE){
+                    TransitionManager.beginDelayedTransition(card4, new AutoTransition());
+                    exp4.setVisibility(View.VISIBLE);
+                    arrow4.setImageResource(R.drawable.shape);
+                } else {
+                    TransitionManager.beginDelayedTransition(card4, new AutoTransition());
+                    exp4.setVisibility(View.GONE);
+                    arrow4.setImageResource(R.drawable.shape1);
+                }
+            }
+        });
+
+
+        exp5 = myview.findViewById(R.id.exp5);
+        arrow5 = myview.findViewById(R.id.arrow5);
+        card5 = myview.findViewById(R.id.card5);
+
+        card5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (exp5.getVisibility()==View.GONE){
+                    TransitionManager.beginDelayedTransition(card5, new AutoTransition());
+                    exp5.setVisibility(View.VISIBLE);
+                    arrow5.setImageResource(R.drawable.shape);
+                } else {
+                    TransitionManager.beginDelayedTransition(card5, new AutoTransition());
+                    exp5.setVisibility(View.GONE);
+                    arrow5.setImageResource(R.drawable.shape1);
+                }
+            }
+        });
         //end cardAnimation
     }
+
 }

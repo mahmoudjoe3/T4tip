@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutActivity;
+package com.example.T4tip.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,7 +32,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Login.this, add_realty.class);
+                Intent intent = new Intent(Login.this, AddFlat.class);
                 startActivity(intent);
             }
         });

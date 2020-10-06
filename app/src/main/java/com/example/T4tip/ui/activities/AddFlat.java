@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutActivity;
+package com.example.T4tip.ui.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.T4tip.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class add_realty extends AppCompatActivity {
+public class AddFlat extends AppCompatActivity {
 
     private FloatingActionButton add_realty_bt;
     private String myText;
@@ -42,7 +42,7 @@ public class add_realty extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String roomkind = realty_adapter.getItem(i);
-                Intent realty_intent =  new Intent(add_realty.this,realty_details.class);
+                Intent realty_intent =  new Intent(AddFlat.this, FlatDetails.class);
                 realty_intent.putExtra("room kind",roomkind);
                 startActivity(realty_intent);
             }
@@ -51,10 +51,10 @@ public class add_realty extends AppCompatActivity {
     }
 
     private void Alert_Dialog() {
-        final AlertDialog.Builder myDialog = new AlertDialog.Builder(add_realty.this);
+        final AlertDialog.Builder myDialog = new AlertDialog.Builder(AddFlat.this);
 
         myDialog.setTitle("أدخل اسم العقار");
-        final EditText realty_name = new EditText(add_realty.this);
+        final EditText realty_name = new EditText(AddFlat.this);
         realty_name.setInputType(InputType.TYPE_CLASS_TEXT);
         myDialog.setView(realty_name);
         myDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
@@ -78,7 +78,7 @@ public class add_realty extends AppCompatActivity {
         add_realty_bt = (FloatingActionButton)findViewById(R.id.add_realty_btn);
         add_realty_bt.setRippleColor(getResources().getColor(R.color.colorhover));
         listView = (ListView)findViewById(R.id.realty_list);
-        realty_adapter = new ArrayAdapter<String>(add_realty.this, R.layout.list_layout);
+        realty_adapter = new ArrayAdapter<String>(AddFlat.this, R.layout.list_layout);
         listView.setAdapter(realty_adapter);
         relativeLayout = (RelativeLayout)findViewById(R.id.line_layout);
         relativeLayout.setVisibility(View.GONE);

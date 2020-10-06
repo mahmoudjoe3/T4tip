@@ -1,4 +1,4 @@
-package com.example.T4tip.layoutActivity;
+package com.example.T4tip.ui.activities;
 
 import android.os.Bundle;
 import android.widget.EditText;
@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.T4tip.R;
-import com.example.T4tip.ExternalClass.ZoomOutPageTransformer;
-import com.example.T4tip.ExternalClass.pageAdapter;
+import com.example.T4tip.externalClass.ZoomOutPageTransformer;
+import com.example.T4tip.externalClass.TapAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class Mainpage extends AppCompatActivity implements TabLayout.BaseOnTabSelectedListener{
@@ -19,7 +19,7 @@ public class Mainpage extends AppCompatActivity implements TabLayout.BaseOnTabSe
 
     TabLayout tabLayout;
     ViewPager viewPager;
-    com.example.T4tip.ExternalClass.pageAdapter pageAdapter;
+    TapAdapter TapAdapter;
     String roomKind;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +31,9 @@ public class Mainpage extends AppCompatActivity implements TabLayout.BaseOnTabSe
 
         viewBasedOn_roomKind(roomKind.split(" ")[0]);
 
-        pageAdapter=new pageAdapter(getSupportFragmentManager(),tabLayout.getTabCount(),roomKind); //send it to pageadapter like مطبخ 1
+        TapAdapter =new TapAdapter(getSupportFragmentManager(),tabLayout.getTabCount(),roomKind); //send it to pageadapter like مطبخ 1
         viewPager.setPageTransformer(true,new ZoomOutPageTransformer());
-        viewPager.setAdapter(pageAdapter);
+        viewPager.setAdapter(TapAdapter);
 
         tabLayout.addOnTabSelectedListener(this);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));

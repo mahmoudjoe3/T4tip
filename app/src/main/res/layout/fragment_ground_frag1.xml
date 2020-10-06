@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layoutFragment.groundFrag1">
+    tools:context=".ui.fragments.Frag1Ground">
 
     <ScrollView
         android:layout_width="match_parent"
