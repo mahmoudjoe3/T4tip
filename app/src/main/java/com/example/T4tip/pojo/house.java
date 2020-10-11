@@ -1,18 +1,22 @@
 package com.example.T4tip.pojo;
 
+
+
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class house implements Serializable {
-    public String country,area,houseKind;
-    public int num_of_room,num_of_toilet,num_of_cetchen,num_of_reception;
+    private String country,area,houseKind;
+    private int num_of_room,num_of_toilet, num_of_kitchen,num_of_reception;
+    private ArrayList<Unit> rooms, kitchens, receptions, toilets;
 
-    public house(String country, String area, String houseKind, int num_of_room, int num_of_toilet, int num_of_cetchen, int num_of_reception) {
+    public house(String country, String area, String houseKind, int num_of_room, int num_of_toilet, int num_of_kitchen, int num_of_reception) {
         this.country = country;
         this.area = area;
         this.houseKind = houseKind;
         this.num_of_room = num_of_room;
         this.num_of_toilet = num_of_toilet;
-        this.num_of_cetchen = num_of_cetchen;
+        this.num_of_kitchen = num_of_kitchen;
         this.num_of_reception = num_of_reception;
     }
 
@@ -56,12 +60,12 @@ public class house implements Serializable {
         this.num_of_toilet = num_of_toilet;
     }
 
-    public int getNum_of_cetchen() {
-        return num_of_cetchen;
+    public int getNum_of_kitchen() {
+        return num_of_kitchen;
     }
 
-    public void setNum_of_cetchen(int num_of_cetchen) {
-        this.num_of_cetchen = num_of_cetchen;
+    public void setNum_of_kitchen(int num_of_kitchen) {
+        this.num_of_kitchen = num_of_kitchen;
     }
 
     public int getNum_of_reception() {

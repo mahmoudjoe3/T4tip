@@ -39,12 +39,15 @@ dependencies {
 
     //ROOM
     def room_version = "2.2.3"
+    //noinspection GradleDependency
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
 
 // ViewModel and LiveData
     def lifecycle_version = "2.1.0"
+    //noinspection GradleDependency
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    //noinspection LifecycleAnnotationProcessorWithJava8
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
 
 //Recycler view
@@ -54,5 +57,8 @@ dependencies {
 //butter knife
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    //sdp
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
 
 }
